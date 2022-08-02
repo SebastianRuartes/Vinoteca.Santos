@@ -1,3 +1,31 @@
+<<<<<<< HEAD
+=======
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-image: url("../logo/fondo4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.nav-link {
+  color: rgb(181, 78, 78) !important;
+  font-size: 13px;
+}
+
+.nav-link:hover {
+  color: royalblue !important;
+}
+
+/*INDEX*/
+/*Grid Area*/
+>>>>>>> dab93bcb9ec5c022ac0328bdb140ef202907aa86
 #h-index {
   grid-area: h-index;
 }
@@ -30,14 +58,72 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   -moz-column-gap: 10px;
+<<<<<<< HEAD
   column-gap: 10px;
   row-gap: 10px;
 }
 .carrusel-doble .carousel-inner {
+=======
+       column-gap: 10px;
+  row-gap: 10px;
+}
+
+.carousel-inner {
+>>>>>>> dab93bcb9ec5c022ac0328bdb140ef202907aa86
   width: 500px;
   height: 500px;
 }
 
+<<<<<<< HEAD
+=======
+.titulo-index {
+  width: auto;
+  height: auto;
+  background-color: aqua;
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes efecto {
+  25% {
+    width: auto;
+  }
+  50% {
+    width: auto;
+    background-color: rgb(108, 161, 143);
+  }
+  75% {
+    width: auto;
+  }
+  100% {
+    width: auto;
+  }
+}
+
+@keyframes efecto {
+  25% {
+    width: auto;
+  }
+  50% {
+    width: auto;
+    background-color: rgb(108, 161, 143);
+  }
+  75% {
+    width: auto;
+  }
+  100% {
+    width: auto;
+  }
+}
+>>>>>>> dab93bcb9ec5c022ac0328bdb140ef202907aa86
 /*Nosotros*/
 /*Grid Area*/
 #h-nosotros {
@@ -73,11 +159,20 @@
   grid-template-rows: auto auto;
   row-gap: 20px;
 }
+<<<<<<< HEAD
 .personal-nosotros .sub-nosotros {
   display: grid;
   grid-template-columns: auto auto;
   -moz-column-gap: 15px;
   column-gap: 15px;
+=======
+
+.sub-nosotros {
+  display: grid;
+  grid-template-columns: auto auto;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+>>>>>>> dab93bcb9ec5c022ac0328bdb140ef202907aa86
 }
 
 /*Varietales*/
@@ -115,9 +210,16 @@
   grid-template-rows: repeat(8, auto);
   row-gap: 20px;
   -moz-column-gap: 20px;
+<<<<<<< HEAD
   column-gap: 20px;
 }
 .tabla-varietal .tabla-varietal {
+=======
+       column-gap: 20px;
+}
+
+.tabla-varietal {
+>>>>>>> dab93bcb9ec5c022ac0328bdb140ef202907aa86
   border: 1px solid black;
 }
 
@@ -125,7 +227,12 @@
   background: #ecf0f1;
   padding: 1em;
 }
+<<<<<<< HEAD
 .varietal:hover {
+=======
+
+.varietal :hover {
+>>>>>>> dab93bcb9ec5c022ac0328bdb140ef202907aa86
   border: 1px solid lightskyblue;
 }
 
@@ -196,6 +303,7 @@
   grid-template-rows: auto auto auto auto;
   row-gap: 20px;
   grid-template-areas: "h-tienda h-tienda" "s-tienda s-tienda" "s-productos s-productos" "f-tienda f-tienda";
+<<<<<<< HEAD
 }
 
 .tintos {
@@ -227,4 +335,478 @@
 }
 .botellas:hover {
   border: 1px solid lightskyblue;
+=======
+}
+
+.tintos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.blancos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.promos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.botellas:hover {
+  border: 1px solid lightskyblue;
+}
+
+.botellas {
+  text-align: center;
+}
+
+/*RESPONSIVE 360px*/
+@media screen and (min-width: 360px) {
+  body {
+    background-image: url("../logo/fondo4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  /*INDEX*/
+  .carrusel-doble {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .carousel-inner {
+    width: 360px;
+    height: 250px;
+  }
+  /*Nosotros*/
+  .personal-nosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 5px;
+  }
+  .sub-nosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 5px;
+  }
+  .gif-nosotros {
+    width: 360px;
+    height: 360px;
+  }
+  .gif-tamano {
+    width: 360px;
+    height: 360px;
+  }
+  /*Varietales*/
+  .tabla-varietal {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(24, auto);
+    row-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .varietal {
+    width: 360px;
+    height: 360px;
+  }
+  /*Tienda*/
+  .tintos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .blancos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .promos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .botellas:hover {
+    border: 1px solid lightskyblue;
+  }
+  .botellas {
+    text-align: center;
+  }
+  /*Contacto*/
+  .formulario-texto {
+    width: 360px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    border-radius: 5px;
+  }
+  #formulario {
+    width: 360px;
+  }
+  .ubi {
+    padding: 10px;
+    text-align: center;
+  }
+  input, textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .mapa {
+    text-align: center;
+  }
+  .mapa-tam {
+    width: 360px;
+    height: 400px;
+  }
+}
+/*Responsive 768px*/
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../logo/fondo4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  /*INDEX*/
+  .carrusel-doble {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    -moz-column-gap: 3px;
+         column-gap: 3px;
+    row-gap: 2px;
+  }
+  .carousel-inner {
+    width: 384px;
+    height: 510px;
+  }
+  /*Nosotros*/
+  .personal-nosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 5px;
+  }
+  .sub-nosotros {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 5px;
+  }
+  .gif-nosotros {
+    width: 360px;
+    height: 360px;
+  }
+  .gif-tamano {
+    width: 360px;
+    height: 360px;
+  }
+  /*Varietales*/
+  .tabla-varietal {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(8, auto);
+    row-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .varietal {
+    width: 240px;
+    height: 360px;
+  }
+  /*Tienda*/
+  .tintos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .blancos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .promos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .botellas:hover {
+    border: 1px solid lightskyblue;
+  }
+  .botellas {
+    text-align: center;
+  }
+  /*Contacto*/
+  .formulario-texto {
+    width: 768px;
+    height: 768px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    border-radius: 5px;
+  }
+  #formulario {
+    width: 768px;
+  }
+  .ubi {
+    padding: 10px;
+    text-align: center;
+  }
+  input, textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .mapa {
+    text-align: center;
+  }
+  .mapa-tam {
+    width: 768px;
+    height: 850px;
+  }
+}
+/*RESPONSIVE 1024px*/
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../logo/fondo4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  /*INDEX*/
+  .carrusel-doble {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .carousel-inner {
+    width: 450px;
+    height: 340px;
+  }
+  /*Nosotros*/
+  .personal-nosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 5px;
+  }
+  .sub-nosotros {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 5px;
+  }
+  .gif-nosotros {
+    width: 480px;
+    height: 500px;
+  }
+  .gif-tamano {
+    width: 480px;
+    height: 360px;
+  }
+  /*Varietales*/
+  .tabla-varietal {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(8, auto);
+    row-gap: 5px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+  .varietal {
+    width: 330px;
+    height: 450px;
+  }
+  /*Tienda*/
+  .tintos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .blancos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .promos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .botellas:hover {
+    border: 1px solid lightskyblue;
+  }
+  .botellas {
+    text-align: center;
+  }
+  /*Contacto*/
+  .formulario-texto {
+    width: 900px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    border-radius: 5px;
+  }
+  #formulario {
+    width: 360px;
+  }
+  .ubi {
+    padding: 10px;
+    text-align: center;
+  }
+  input, textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .mapa {
+    text-align: center;
+  }
+  .mapa-tam {
+    width: 1024px;
+    height: 800px;
+  }
+}
+/*RESPONSIVE 1024px*/
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url("../logo/fondo4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  /*INDEX*/
+  .carrusel-doble {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .carousel-inner {
+    width: 680px;
+    height: 480px;
+  }
+  /*Nosotros*/
+  .personal-nosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 5px;
+  }
+  .sub-nosotros {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 5px;
+  }
+  .gif-nosotros {
+    width: 480px;
+    height: 500px;
+  }
+  .gif-tamano {
+    width: 630px;
+    height: 500px;
+  }
+  /*Varietales*/
+  .tabla-varietal {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(8, auto);
+    row-gap: 5px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+  .varietal {
+    width: 450px;
+    height: 450px;
+  }
+  /*Tienda*/
+  .tintos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .blancos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .promos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+  .botellas:hover {
+    border: 1px solid lightskyblue;
+  }
+  .botellas {
+    text-align: center;
+  }
+  /*Contacto*/
+  .formulario-texto {
+    width: 900px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    border-radius: 5px;
+  }
+  #formulario {
+    width: 360px;
+  }
+  .ubi {
+    padding: 10px;
+    text-align: center;
+  }
+  input, textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .mapa {
+    text-align: center;
+  }
+  .mapa-tam {
+    width: 1440px;
+    height: 800px;
+  }
+>>>>>>> dab93bcb9ec5c022ac0328bdb140ef202907aa86
 }/*# sourceMappingURL=style.css.map */
