@@ -1,0 +1,40 @@
+@import "../variables";
+#h-index {
+    grid-area: h-index;
+  }
+  
+  #s-index {
+    grid-area: s-index;
+  }
+  
+  #carrusel-index {
+    grid-area: carrusel-index;
+  }
+  
+  #f-index {
+    grid-area: f-index;
+  }
+  
+  .border {
+    border: 1px solid black;
+  }
+  
+  #grilla-index {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 10px;
+    grid-template-areas: "h-index h-index " "s-index s-index" " carrusel-index carrusel-index" "f-index f-index";
+  }
+  
+  .carrusel-doble {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+        .carousel-inner {
+            width: 500px;
+            height: 500px;
+      }
+  }

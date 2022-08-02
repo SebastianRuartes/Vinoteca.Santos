@@ -1,0 +1,48 @@
+@import "../variables";
+/*Varietales*/
+/*Grid Area*/
+#h-varietal {
+    grid-area: h-varietal;
+}
+
+#s-varietal {
+    grid-area: s-varietal;
+}
+
+#tabla-varietales {
+    grid-area: tabla-varietales;
+}
+
+#f-varietal {
+    grid-area: f-varietal;
+}
+
+.border {
+    border: 1px solid black;
+}
+#grilla-varietales {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 10px;
+    grid-template-areas: "h-varietal h-varietal " "s-varietal s-varietal" "tabla-varietales tabla-varietales" "f-varietal f-varietal";
+}
+
+.tabla-varietal {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(8, auto);
+    row-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+        .tabla-varietal {
+            border: 1px solid black;
+        }
+}
+
+.varietal {
+    background: #ecf0f1;
+    padding: 1em;
+    &:hover{
+    border: 1px solid lightskyblue;
+    }   
+}
