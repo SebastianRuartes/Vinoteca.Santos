@@ -29,12 +29,16 @@
   .carrusel-doble {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    -moz-column-gap: 10px;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
     column-gap: 10px;
     row-gap: 10px;
         .carousel-inner {
-            width: 500px;
+            width: auto;
             height: 500px;
       }
+  }
+  h1{
+    color: $color-titulos;
+    text-align: center;
   }

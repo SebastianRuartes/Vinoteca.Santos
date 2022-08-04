@@ -28,16 +28,12 @@
     row-gap: 10px;
     grid-template-areas: "h-nosotros h-nosotros" "s-nosotros s-nosotros" "carrusel-nosotros carrusel-nosotros" "f-nosotros f-nosotros";
 }
-
-.personal-nosotros {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    row-gap: 20px;
-    .sub-nosotros {
-    display: grid;
-    grid-template-columns: auto auto;
-    -moz-column-gap: 15px;
-    column-gap: 15px;
-    }
+.gif-tam{
+    text-align: center;
+    width: auto;
+    
+}.gif-tam{
+    text-align: center;
+    width: auto;
+    
 }
