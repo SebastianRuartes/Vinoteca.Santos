@@ -1,5 +1,13 @@
 /*VARIABLES*/
 /*PAGINAS*/
+body {
+  background-color: #D9AFD9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
 #h-index {
   grid-area: h-index;
 }
@@ -12,636 +20,1306 @@
   grid-area: carrusel-index;
 }
 
-#f-index {
-  grid-area: f-index;
+#carrusel-index-promo {
+  grid-area: carrusel-index-promo;
 }
 
-.border {
-  border: 1px solid black;
+#f-index {
+  grid-area: f-index;
 }
 
 #grilla-index {
   display: grid;
   grid-template-rows: auto auto auto auto;
   row-gap: 10px;
-  grid-template-areas: "h-index h-index " "s-index s-index" " carrusel-index carrusel-index" "f-index f-index";
+  grid-template-areas: "h-index h-index " "s-index s-index" " carrusel-index carrusel-index" "carrusel-index-promo carrusel-index-promo" "f-index f-index";
 }
 
 .carrusel-doble {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   grid-template-rows: auto auto;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  column-gap: 10px;
   row-gap: 10px;
 }
 .carrusel-doble .carousel-inner {
-  width: auto;
-  height: 500px;
+  width: 750px;
+  height: 480px;
 }
 
 h1 {
-  color: rgb(162, 64, 181);
+  color: rgb(0, 0, 0);
   text-align: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+.promo {
+  display: grid;
+  grid-template-columns: 35% 35% 60%;
+  grid-template-rows: auto;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  padding: 25px;
+}
+
+.promo-index {
+  width: 400px;
+  height: 300px;
+}
+.promo-index:hover {
+  box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
+  transform: translateY(-3%);
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+}
+
+.footer .grup-1 {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 10px;
+  padding: 30px;
+}
+
+.footer .grup-1 .box figure {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .grup-1 .box figure .img {
+  width: 170px;
+  height: 150px;
+}
+
+.footer .grup-1 .box .footer-text {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.footer .grup-1 .box .texto {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer .grup-1 .red-social .fa {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 20px;
+  border-radius: 35px;
+  background-color: #6bdbe9;
+  margin-right: 25px;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.footer .grup-1 .red-social .fa:hover {
+  color: rgba(233, 72, 185, 0.812);
+}
+
+.footer .grup-2 {
+  background-color: black;
+  padding: 5px 5px;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .carrusel-doble {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrusel-doble .carousel-inner {
+    width: 100%;
+    height: 300px;
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  }
+  .promo {
+    display: flex;
+    flex-direction: column;
+  }
+  .promo-index {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+  }
+  .promo-index:hover {
+    box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
+    transform: translateY(-3%);
+  }
+  .footer {
+    width: 100%;
+    background-color: black;
+  }
+  .footer .grup-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer .grup-1 .box figure {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .grup-1 .box figure .img {
+    width: 170px;
+    height: 150px;
+  }
+  .footer .grup-1 .box .footer-text {
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .footer .grup-1 .box .texto {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .footer .grup-1 .red-social .fa {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 35px;
+    background-color: #6bdbe9;
+    margin-right: 25px;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .footer .grup-1 .red-social .fa:hover {
+    color: rgba(233, 72, 185, 0.812);
+  }
+  .footer .grup-2 {
+    background-color: black;
+    padding: 5px 5px;
+    text-align: center;
+    color: #fff;
+  }
+  /*Nosotoros*/
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-nosotros {
+    width: 90%;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-nosotros:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .nosotros .box-nosotros {
+    background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
+    background-color: rgba(220, 233, 234, 0.627);
+    background-repeat: no-repeat;
+    background-position: 430px;
+    background-position-y: 160px;
+    background-size: 35%;
+  }
+  .box-nosotros .texto-nosotros {
+    width: 100%;
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-indent: 15px;
+    padding-top: 25px;
+  }
+  .box-gif {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-gif:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .box-gif .gif {
+    width: 100%;
+    height: 350px;
+  }
+  /*Tienda*/
+  .varietales {
+    display: flex;
+    flex-direction: column;
+  }
+  .producto {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .producto:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .producto .botellas {
+    width: 100%;
+    height: 400px;
+  }
+  .producto .contenido {
+    padding: 15px;
+    text-align: center;
+  }
+  .producto .contenido {
+    line-height: 2;
+    color: #6a6a6a;
+  }
+  .producto .contenido h3 {
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+  .producto .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+  }
+  .producto .contenido a:hover {
+    background: #2fb4cc;
+    color: #fff;
+  }
+  .producto .contenido .precio {
+    font-size: 25px;
+  }
+  /*Contacto*/
+  .mapa-tam {
+    width: 100%;
+    height: 450px;
+  }
+}
 /*Nosotros*/
 /*Grid Area*/
 #h-nosotros {
   grid-area: h-nosotros;
 }
 
-#s-nosotros {
-  grid-area: s-nosotros;
-}
-
-#carrusel-nosotros {
-  grid-area: carrusel-nosotros;
-}
-
 #f-nosotros {
   grid-area: f-nosotros;
 }
 
-.border {
-  border: 1px solid black;
+.nosotros {
+  width: 100%;
+  display: flex;
 }
 
-#grilla-nosotros {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  row-gap: 10px;
-  grid-template-areas: "h-nosotros h-nosotros" "s-nosotros s-nosotros" "carrusel-nosotros carrusel-nosotros" "f-nosotros f-nosotros";
+.box-nosotros {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.box-nosotros:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 
-.gif-tam {
-  text-align: center;
-  width: auto;
+.nosotros .box-nosotros {
+  background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
+  background-color: rgba(220, 233, 234, 0.627);
+  background-repeat: no-repeat;
+  background-position: 380px;
+  background-position-y: 160px;
+  background-size: 35%;
 }
 
-.gif-tam {
-  text-align: center;
-  width: auto;
+.box-nosotros .texto-nosotros {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  text-indent: 15px;
+  padding-top: 25px;
+  padding-left: 10px;
 }
 
+.box-gif {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.box-gif:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.box-gif .gif {
+  width: 100%;
+  height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .carrusel-doble {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrusel-doble .carousel-inner {
+    width: 100%;
+    height: 300px;
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  }
+  .promo {
+    display: flex;
+    flex-direction: column;
+  }
+  .promo-index {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+  }
+  .promo-index:hover {
+    box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
+    transform: translateY(-3%);
+  }
+  .footer {
+    width: 100%;
+    background-color: black;
+  }
+  .footer .grup-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer .grup-1 .box figure {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .grup-1 .box figure .img {
+    width: 170px;
+    height: 150px;
+  }
+  .footer .grup-1 .box .footer-text {
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .footer .grup-1 .box .texto {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .footer .grup-1 .red-social .fa {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 35px;
+    background-color: #6bdbe9;
+    margin-right: 25px;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .footer .grup-1 .red-social .fa:hover {
+    color: rgba(233, 72, 185, 0.812);
+  }
+  .footer .grup-2 {
+    background-color: black;
+    padding: 5px 5px;
+    text-align: center;
+    color: #fff;
+  }
+  /*Nosotoros*/
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-nosotros {
+    width: 90%;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-nosotros:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .nosotros .box-nosotros {
+    background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
+    background-color: rgba(220, 233, 234, 0.627);
+    background-repeat: no-repeat;
+    background-position: 430px;
+    background-position-y: 160px;
+    background-size: 35%;
+  }
+  .box-nosotros .texto-nosotros {
+    width: 100%;
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-indent: 15px;
+    padding-top: 25px;
+  }
+  .box-gif {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-gif:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .box-gif .gif {
+    width: 100%;
+    height: 350px;
+  }
+  /*Tienda*/
+  .varietales {
+    display: flex;
+    flex-direction: column;
+  }
+  .producto {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .producto:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .producto .botellas {
+    width: 100%;
+    height: 400px;
+  }
+  .producto .contenido {
+    padding: 15px;
+    text-align: center;
+  }
+  .producto .contenido {
+    line-height: 2;
+    color: #6a6a6a;
+  }
+  .producto .contenido h3 {
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+  .producto .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+  }
+  .producto .contenido a:hover {
+    background: #2fb4cc;
+    color: #fff;
+  }
+  .producto .contenido .precio {
+    font-size: 25px;
+  }
+  /*Contacto*/
+  .mapa-tam {
+    width: 100%;
+    height: 450px;
+  }
+}
 /*Varietales*/
 /*Grid Area*/
-#h-varietal {
-  grid-area: h-varietal;
-}
-
-#s-varietal {
-  grid-area: s-varietal;
-}
-
-#tabla-varietales {
-  grid-area: tabla-varietales;
-}
-
 #f-varietal {
-  grid-area: f-varietal;
+  text-align: center;
 }
 
-.border {
-  border: 1px solid black;
+.seccion-varietales {
+  text-align: start;
 }
 
-#grilla-varietales {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  row-gap: 10px;
-  grid-template-areas: "h-varietal h-varietal " "s-varietal s-varietal" "tabla-varietales tabla-varietales" "f-varietal f-varietal";
-}
-
-.tabla-varietal {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(8, auto);
-  row-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-}
-.tabla-varietal .tabla-varietal {
-  border: 1px solid black;
-}
-
-.varietal {
-  background: #ecf0f1;
-  padding: 1em;
-}
-.varietal:hover {
-  border: 1px solid lightskyblue;
-}
-
-/*Contacto*/
-#h-contacto {
-  grid-area: h-contacto;
-}
-
-#formulario {
-  grid-area: formulario;
-}
-
-#ubicacion {
-  grid-area: ubicacion;
-}
-
-#f-contacto {
-  grid-area: f-contacto;
-}
-
-#grilla-contacto {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  grid-row: 25px;
-  grid-template-areas: "h-contacto h-contacto" "formulario formulario" "ubicacion ubicacion" "f-contacto f-contacto";
-}
-
-.formulario-texto {
-  width: 500px;
-  height: 500px;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 30px;
-  margin: auto;
-  margin-top: 50px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: white;
-  border-radius: 5px;
-}
-
-.ubi {
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px;
-  text-align: center;
-}
-
-.mapa {
-  text-align: center;
-}
-
-/*Tienda*/
-#h-tienda {
-  grid-area: h-tienda;
-}
-
-#s-tienda {
-  grid-area: s-tienda;
-}
-
-#s-productos {
-  grid-area: s-productos;
-}
-
-#f-tienda {
-  grid-area: f-tienda;
-}
-
-#grilla-tienda {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
+  justify-content: space-evenly;
   row-gap: 20px;
-  grid-template-areas: "h-tienda h-tienda" "s-tienda s-tienda" "s-productos s-productos" "f-tienda f-tienda";
 }
 
-.tintos {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
+.card-img-top {
+  width: 398px;
+  height: 350px;
 }
 
-.blancos {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
+.card-body {
+  background-color: black;
 }
 
-.promos {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
+.card-body .card-text {
+  color: azure;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 25px;
 }
 
-.botellas {
+@media screen and (max-width: 768px) {
+  .carrusel-doble {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrusel-doble .carousel-inner {
+    width: 100%;
+    height: 300px;
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  }
+  .promo {
+    display: flex;
+    flex-direction: column;
+  }
+  .promo-index {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+  }
+  .promo-index:hover {
+    box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
+    transform: translateY(-3%);
+  }
+  .footer {
+    width: 100%;
+    background-color: black;
+  }
+  .footer .grup-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer .grup-1 .box figure {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .grup-1 .box figure .img {
+    width: 170px;
+    height: 150px;
+  }
+  .footer .grup-1 .box .footer-text {
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .footer .grup-1 .box .texto {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .footer .grup-1 .red-social .fa {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 35px;
+    background-color: #6bdbe9;
+    margin-right: 25px;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .footer .grup-1 .red-social .fa:hover {
+    color: rgba(233, 72, 185, 0.812);
+  }
+  .footer .grup-2 {
+    background-color: black;
+    padding: 5px 5px;
+    text-align: center;
+    color: #fff;
+  }
+  /*Nosotoros*/
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-nosotros {
+    width: 90%;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-nosotros:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .nosotros .box-nosotros {
+    background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
+    background-color: rgba(220, 233, 234, 0.627);
+    background-repeat: no-repeat;
+    background-position: 430px;
+    background-position-y: 160px;
+    background-size: 35%;
+  }
+  .box-nosotros .texto-nosotros {
+    width: 100%;
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-indent: 15px;
+    padding-top: 25px;
+  }
+  .box-gif {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-gif:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .box-gif .gif {
+    width: 100%;
+    height: 350px;
+  }
+  /*Tienda*/
+  .varietales {
+    display: flex;
+    flex-direction: column;
+  }
+  .producto {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .producto:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .producto .botellas {
+    width: 100%;
+    height: 400px;
+  }
+  .producto .contenido {
+    padding: 15px;
+    text-align: center;
+  }
+  .producto .contenido {
+    line-height: 2;
+    color: #6a6a6a;
+  }
+  .producto .contenido h3 {
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+  .producto .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+  }
+  .producto .contenido a:hover {
+    background: #2fb4cc;
+    color: #fff;
+  }
+  .producto .contenido .precio {
+    font-size: 25px;
+  }
+  /*Contacto*/
+  .mapa-tam {
+    width: 100%;
+    height: 450px;
+  }
+}
+/*Contacto*/
+.form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+.formulario-texto .form-imput {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  color: black;
+}
+
+.formulario-texto .form-label {
+  color: white;
+}
+
+.mapa-tam {
+  width: 1520px;
+  height: 450px;
+}
+
+@media screen and (max-width: 768px) {
+  .carrusel-doble {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrusel-doble .carousel-inner {
+    width: 100%;
+    height: 300px;
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  }
+  .promo {
+    display: flex;
+    flex-direction: column;
+  }
+  .promo-index {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+  }
+  .promo-index:hover {
+    box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
+    transform: translateY(-3%);
+  }
+  .footer {
+    width: 100%;
+    background-color: black;
+  }
+  .footer .grup-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer .grup-1 .box figure {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .grup-1 .box figure .img {
+    width: 170px;
+    height: 150px;
+  }
+  .footer .grup-1 .box .footer-text {
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .footer .grup-1 .box .texto {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .footer .grup-1 .red-social .fa {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 35px;
+    background-color: #6bdbe9;
+    margin-right: 25px;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .footer .grup-1 .red-social .fa:hover {
+    color: rgba(233, 72, 185, 0.812);
+  }
+  .footer .grup-2 {
+    background-color: black;
+    padding: 5px 5px;
+    text-align: center;
+    color: #fff;
+  }
+  /*Nosotoros*/
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-nosotros {
+    width: 90%;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-nosotros:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .nosotros .box-nosotros {
+    background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
+    background-color: rgba(220, 233, 234, 0.627);
+    background-repeat: no-repeat;
+    background-position: 430px;
+    background-position-y: 160px;
+    background-size: 35%;
+  }
+  .box-nosotros .texto-nosotros {
+    width: 100%;
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-indent: 15px;
+    padding-top: 25px;
+  }
+  .box-gif {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-gif:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .box-gif .gif {
+    width: 100%;
+    height: 350px;
+  }
+  /*Tienda*/
+  .varietales {
+    display: flex;
+    flex-direction: column;
+  }
+  .producto {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .producto:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .producto .botellas {
+    width: 100%;
+    height: 400px;
+  }
+  .producto .contenido {
+    padding: 15px;
+    text-align: center;
+  }
+  .producto .contenido {
+    line-height: 2;
+    color: #6a6a6a;
+  }
+  .producto .contenido h3 {
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+  .producto .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+  }
+  .producto .contenido a:hover {
+    background: #2fb4cc;
+    color: #fff;
+  }
+  .producto .contenido .precio {
+    font-size: 25px;
+  }
+  /*Contacto*/
+  .mapa-tam {
+    width: 100%;
+    height: 450px;
+  }
+}
+/*Tienda*/
+#f-tienda {
   text-align: center;
 }
-.botellas:hover {
-  border: 1px solid lightskyblue;
+
+.varietales {
+  width: 100%;
+  display: flex;
+}
+
+.producto {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.producto:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.producto .botellas {
+  width: 100%;
+  height: 400px;
+}
+
+.producto .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.producto .contenido {
+  line-height: 2;
+  color: #6a6a6a;
+}
+
+.producto .contenido h3 {
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.producto .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.producto .contenido a:hover {
+  background: #2fb4cc;
+  color: #fff;
+}
+
+.producto .contenido .precio {
+  font-size: 25px;
 }
 
 /*MEDIA QUERIES*/
-@media screen and (min-width: 375px) {
-  body {
-    background-color: #eec0c8;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    overflow-x: hidden;
-  }
-  /*INDEX*/
+@media screen and (max-width: 768px) {
   .carrusel-doble {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    display: flex;
+    flex-direction: column;
   }
   .carrusel-doble .carousel-inner {
-    width: 768px;
-    height: 500px;
+    width: 100%;
+    height: 300px;
   }
-  /*Nosotros*/
-  .personal-nosotros {
-    width: 360px;
-    height: 375px;
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
   }
-  .gif-tam {
-    width: 375px;
+  h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
   }
-  /*Varietales*/
-  .tabla-varietal {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(24, auto);
-    row-gap: 20px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
+  .promo {
+    display: flex;
+    flex-direction: column;
   }
-  .varietal {
-    width: 375px;
-    height: 450px;
+  .promo-index {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+  }
+  .promo-index:hover {
+    box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
+    transform: translateY(-3%);
+  }
+  .footer {
+    width: 100%;
+    background-color: black;
+  }
+  .footer .grup-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer .grup-1 .box figure {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .grup-1 .box figure .img {
+    width: 170px;
+    height: 150px;
+  }
+  .footer .grup-1 .box .footer-text {
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .footer .grup-1 .box .texto {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .footer .grup-1 .red-social .fa {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 35px;
+    background-color: #6bdbe9;
+    margin-right: 25px;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .footer .grup-1 .red-social .fa:hover {
+    color: rgba(233, 72, 185, 0.812);
+  }
+  .footer .grup-2 {
+    background-color: black;
+    padding: 5px 5px;
+    text-align: center;
+    color: #fff;
+  }
+  /*Nosotoros*/
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-nosotros {
+    width: 90%;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-nosotros:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .nosotros .box-nosotros {
+    background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
+    background-color: rgba(220, 233, 234, 0.627);
+    background-repeat: no-repeat;
+    background-position: 430px;
+    background-position-y: 160px;
+    background-size: 35%;
+  }
+  .box-nosotros .texto-nosotros {
+    width: 100%;
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-indent: 15px;
+    padding-top: 25px;
+  }
+  .box-gif {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .box-gif:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .box-gif .gif {
+    width: 100%;
+    height: 350px;
   }
   /*Tienda*/
-  .tintos {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+  .varietales {
+    display: flex;
+    flex-direction: column;
   }
-  .blancos {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+  .producto {
+    width: 90%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
   }
-  .promos {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+  .producto:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
   }
-  .botellas:hover {
-    border: 1px solid lightskyblue;
-  }
-  .botellas {
-    text-align: center;
-  }
-  /*Contacto*/
-  .formulario-texto {
-    width: 375px;
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 30px;
-    margin: auto;
-    margin-top: 50px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    color: white;
-    border-radius: 5px;
-  }
-  #formulario {
-    width: 375px;
-    height: 900PX;
-  }
-  .ubi {
-    padding: 10px;
-    text-align: center;
-  }
-  input, textarea {
+  .producto .botellas {
     width: 100%;
-    margin-bottom: 25px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  .mapa {
-    text-align: center;
-  }
-  .mapa-tam {
-    width: 375px;
     height: 400px;
   }
-}
-@media screen and (min-width: 768px) {
-  body {
-    background-color: #eec0c8;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    overflow-x: hidden;
-  }
-  /*INDEX*/
-  .carrusel-doble {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    -moz-column-gap: 3px;
-    column-gap: 3px;
-    row-gap: 2px;
-  }
-  .carousel-inner {
-    width: 384px;
-    height: 510px;
-  }
-  /*Nosotros*/
-  .personal-nosotros {
-    width: 768px;
-    height: 340px;
-  }
-  .personal-nosotros .gif-tam {
-    width: 500px;
-  }
-  /*Varietales*/
-  .tabla-varietal {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(8, auto);
-    row-gap: 20px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-  }
-  .varietal {
-    width: 240px;
-    height: 600px;
-  }
-  /*Tienda*/
-  .tintos {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-  }
-  .blancos {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-  }
-  .promos {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-  }
-  .botellas:hover {
-    border: 1px solid lightskyblue;
-  }
-  .botellas {
+  .producto .contenido {
+    padding: 15px;
     text-align: center;
+  }
+  .producto .contenido {
+    line-height: 2;
+    color: #6a6a6a;
+  }
+  .producto .contenido h3 {
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+  .producto .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+  }
+  .producto .contenido a:hover {
+    background: #2fb4cc;
+    color: #fff;
+  }
+  .producto .contenido .precio {
+    font-size: 25px;
   }
   /*Contacto*/
-  .formulario-texto {
-    width: 768px;
-    height: 768px;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 30px;
-    margin: auto;
-    margin-top: 50px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    color: white;
-    border-radius: 5px;
-  }
-  #formulario {
-    width: 768px;
-  }
-  .ubi {
-    padding: 10px;
-    text-align: center;
-  }
-  input, textarea {
-    width: 100%;
-    margin-bottom: 25px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  .mapa {
-    text-align: center;
-  }
   .mapa-tam {
-    width: 768px;
-    height: 850px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    background-color: #eec0c8;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    overflow-x: hidden;
-  }
-  /*INDEX*/
-  .carrusel-doble {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-  }
-  .carousel-inner {
-    width: 450px;
-    height: 340px;
-  }
-  /*Nosotros*/
-  .personal-nosotros {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    row-gap: 5px;
-  }
-  .sub-nosotros {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    row-gap: 5px;
-  }
-  .gif-nosotros {
-    width: 480px;
-    height: 500px;
-  }
-  .gif-tamano {
-    width: 480px;
-    height: 360px;
-  }
-  /*Varietales*/
-  .tabla-varietal {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(8, auto);
-    row-gap: 5px;
-    -moz-column-gap: 5px;
-    column-gap: 5px;
-  }
-  .varietal {
-    width: 330px;
+    width: 100%;
     height: 450px;
-  }
-  /*Tienda*/
-  .tintos {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-  }
-  .blancos {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-  }
-  .promos {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-  }
-  .botellas:hover {
-    border: 1px solid lightskyblue;
-  }
-  .botellas {
-    text-align: center;
-  }
-  /*Contacto*/
-  .formulario-texto {
-    width: 900px;
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 30px;
-    margin: auto;
-    margin-top: 50px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    color: white;
-    border-radius: 5px;
-  }
-  #formulario {
-    width: 360px;
-  }
-  .ubi {
-    padding: 10px;
-    text-align: center;
-  }
-  input, textarea {
-    width: 100%;
-    margin-bottom: 25px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  .mapa {
-    text-align: center;
-  }
-  .mapa-tam {
-    width: 1024px;
-    height: 800px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  body {
-    background-color: #eec0c8;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    overflow-x: hidden;
-  }
-  /*INDEX*/
-  .carrusel-doble {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-  }
-  .carousel-inner {
-    width: 680px;
-    height: 480px;
-  }
-  /*Nosotros*/
-  .personal-nosotros {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    row-gap: 5px;
-  }
-  .sub-nosotros {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    row-gap: 5px;
-  }
-  .gif-nosotros {
-    width: 480px;
-    height: 500px;
-  }
-  .gif-tamano {
-    width: 630px;
-    height: 500px;
-  }
-  /*Varietales*/
-  .tabla-varietal {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(8, auto);
-    row-gap: 5px;
-    -moz-column-gap: 5px;
-    column-gap: 5px;
-  }
-  .varietal {
-    width: 450px;
-    height: 450px;
-  }
-  /*Tienda*/
-  .tintos {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-  }
-  .blancos {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-  }
-  .promos {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-  }
-  .botellas:hover {
-    border: 1px solid lightskyblue;
-  }
-  .botellas {
-    text-align: center;
-  }
-  /*Contacto*/
-  .formulario-texto {
-    width: 900px;
-    height: 700px;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 30px;
-    margin: auto;
-    margin-top: 50px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    color: white;
-    border-radius: 5px;
-  }
-  #formulario {
-    width: 360px;
-  }
-  .ubi {
-    padding: 10px;
-    text-align: center;
-  }
-  input, textarea {
-    width: 100%;
-    margin-bottom: 25px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  .mapa {
-    text-align: center;
-  }
-  .mapa-tam {
-    width: 1440px;
-    height: 800px;
   }
 }/*# sourceMappingURL=style.css.map */
