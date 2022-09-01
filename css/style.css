@@ -1,13 +1,16 @@
 /*VARIABLES*/
+/*MIXIN*/
 /*PAGINAS*/
+/*BODY*/
 body {
-  background-color: #D9AFD9;
+  background-image: url(https://img.freepik.com/vector-premium/fondo-violeta-abstracto-linea_103688-1456.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
 }
 
+/*GRILLA*/
 #h-index {
   grid-area: h-index;
 }
@@ -35,6 +38,7 @@ body {
   grid-template-areas: "h-index h-index " "s-index s-index" " carrusel-index carrusel-index" "carrusel-index-promo carrusel-index-promo" "f-index f-index";
 }
 
+/*CARRUSEL*/
 .carrusel-doble {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -49,20 +53,22 @@ body {
 }
 
 h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding-bottom: 25px;
   padding-top: 25px;
 }
 
 h2 {
-  color: rgb(0, 0, 0);
+  color: black;
   text-align: center;
   padding-bottom: 25px;
   padding-top: 25px;
   background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 }
 
+/*PROMO*/
+/*GRILLA*/
 .promo {
   display: grid;
   grid-template-columns: 35% 35% 60%;
@@ -72,6 +78,7 @@ h2 {
   padding: 25px;
 }
 
+/*IMAGEN*/
 .promo-index {
   width: 400px;
   height: 300px;
@@ -81,11 +88,14 @@ h2 {
   transform: translateY(-3%);
 }
 
+/*FOOTER*/
+/*BODY FOOTER*/
 .footer {
   width: 100%;
   background-color: black;
 }
 
+/*GRILLA FOOTER*/
 .footer .grup-1 {
   width: 100%;
   margin: auto;
@@ -95,6 +105,7 @@ h2 {
   padding: 30px;
 }
 
+/*FIGURA DEL FOOTER*/
 .footer .grup-1 .box figure {
   width: 70%;
   height: 100%;
@@ -108,6 +119,7 @@ h2 {
   height: 150px;
 }
 
+/*TEXTO DEL FOOTER*/
 .footer .grup-1 .box .footer-text {
   color: #fff;
   margin-top: 30px;
@@ -120,6 +132,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* REDES SOCIAL FOOTER*/
 .footer .grup-1 .red-social .fa {
   display: inline-block;
   text-decoration: none;
@@ -145,202 +158,6 @@ h2 {
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  .carrusel-doble {
-    display: flex;
-    flex-direction: column;
-  }
-  .carrusel-doble .carousel-inner {
-    width: 100%;
-    height: 300px;
-  }
-  h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-  }
-  h2 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  }
-  .promo {
-    display: flex;
-    flex-direction: column;
-  }
-  .promo-index {
-    width: 100%;
-    height: 300px;
-    padding: 15px;
-  }
-  .promo-index:hover {
-    box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
-    transform: translateY(-3%);
-  }
-  .footer {
-    width: 100%;
-    background-color: black;
-  }
-  .footer .grup-1 {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-  }
-  .footer .grup-1 .box figure {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer .grup-1 .box figure .img {
-    width: 170px;
-    height: 150px;
-  }
-  .footer .grup-1 .box .footer-text {
-    color: #fff;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    font-size: 25px;
-  }
-  .footer .grup-1 .box .texto {
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  .footer .grup-1 .red-social .fa {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 20px;
-    border-radius: 35px;
-    background-color: #6bdbe9;
-    margin-right: 25px;
-    text-align: center;
-    transition: all 300ms ease;
-  }
-  .footer .grup-1 .red-social .fa:hover {
-    color: rgba(233, 72, 185, 0.812);
-  }
-  .footer .grup-2 {
-    background-color: black;
-    padding: 5px 5px;
-    text-align: center;
-    color: #fff;
-  }
-  /*Nosotoros*/
-  .nosotros {
-    display: flex;
-    flex-direction: column;
-  }
-  .box-nosotros {
-    width: 90%;
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .box-nosotros:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .nosotros .box-nosotros {
-    background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
-    background-color: rgba(220, 233, 234, 0.627);
-    background-repeat: no-repeat;
-    background-position: 430px;
-    background-position-y: 160px;
-    background-size: 35%;
-  }
-  .box-nosotros .texto-nosotros {
-    width: 100%;
-    color: black;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    text-indent: 15px;
-    padding-top: 25px;
-  }
-  .box-gif {
-    width: 90%;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .box-gif:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .box-gif .gif {
-    width: 100%;
-    height: 350px;
-  }
-  /*Tienda*/
-  .varietales {
-    display: flex;
-    flex-direction: column;
-  }
-  .producto {
-    width: 90%;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .producto:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .producto .botellas {
-    width: 100%;
-    height: 400px;
-  }
-  .producto .contenido {
-    padding: 15px;
-    text-align: center;
-  }
-  .producto .contenido {
-    line-height: 2;
-    color: #6a6a6a;
-  }
-  .producto .contenido h3 {
-    font-weight: 200;
-    margin-bottom: 15px;
-  }
-  .producto .contenido a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400ms ease;
-  }
-  .producto .contenido a:hover {
-    background: #2fb4cc;
-    color: #fff;
-  }
-  .producto .contenido .precio {
-    font-size: 25px;
-  }
-  /*Contacto*/
-  .mapa-tam {
-    width: 100%;
-    height: 450px;
-  }
-}
 /*Nosotros*/
 /*Grid Area*/
 #h-nosotros {
@@ -351,11 +168,13 @@ h2 {
   grid-area: f-nosotros;
 }
 
+/*FLEX */
 .nosotros {
   width: 100%;
   display: flex;
 }
 
+/*BOX NOSOTROS*/
 .box-nosotros {
   width: 100%;
   margin: 20px;
@@ -371,6 +190,7 @@ h2 {
   transform: translateY(-3%);
 }
 
+/*FONDO DEL BOX*/
 .nosotros .box-nosotros {
   background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
   background-color: rgba(220, 233, 234, 0.627);
@@ -380,6 +200,7 @@ h2 {
   background-size: 35%;
 }
 
+/*TEXTO BOX*/
 .box-nosotros .texto-nosotros {
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -390,6 +211,7 @@ h2 {
   padding-left: 10px;
 }
 
+/*GIF BOX*/
 .box-gif {
   width: 100%;
   margin: 20px;
@@ -410,202 +232,6 @@ h2 {
   height: 350px;
 }
 
-@media screen and (max-width: 768px) {
-  .carrusel-doble {
-    display: flex;
-    flex-direction: column;
-  }
-  .carrusel-doble .carousel-inner {
-    width: 100%;
-    height: 300px;
-  }
-  h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-  }
-  h2 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  }
-  .promo {
-    display: flex;
-    flex-direction: column;
-  }
-  .promo-index {
-    width: 100%;
-    height: 300px;
-    padding: 15px;
-  }
-  .promo-index:hover {
-    box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
-    transform: translateY(-3%);
-  }
-  .footer {
-    width: 100%;
-    background-color: black;
-  }
-  .footer .grup-1 {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-  }
-  .footer .grup-1 .box figure {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer .grup-1 .box figure .img {
-    width: 170px;
-    height: 150px;
-  }
-  .footer .grup-1 .box .footer-text {
-    color: #fff;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    font-size: 25px;
-  }
-  .footer .grup-1 .box .texto {
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  .footer .grup-1 .red-social .fa {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 20px;
-    border-radius: 35px;
-    background-color: #6bdbe9;
-    margin-right: 25px;
-    text-align: center;
-    transition: all 300ms ease;
-  }
-  .footer .grup-1 .red-social .fa:hover {
-    color: rgba(233, 72, 185, 0.812);
-  }
-  .footer .grup-2 {
-    background-color: black;
-    padding: 5px 5px;
-    text-align: center;
-    color: #fff;
-  }
-  /*Nosotoros*/
-  .nosotros {
-    display: flex;
-    flex-direction: column;
-  }
-  .box-nosotros {
-    width: 90%;
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .box-nosotros:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .nosotros .box-nosotros {
-    background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
-    background-color: rgba(220, 233, 234, 0.627);
-    background-repeat: no-repeat;
-    background-position: 430px;
-    background-position-y: 160px;
-    background-size: 35%;
-  }
-  .box-nosotros .texto-nosotros {
-    width: 100%;
-    color: black;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    text-indent: 15px;
-    padding-top: 25px;
-  }
-  .box-gif {
-    width: 90%;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .box-gif:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .box-gif .gif {
-    width: 100%;
-    height: 350px;
-  }
-  /*Tienda*/
-  .varietales {
-    display: flex;
-    flex-direction: column;
-  }
-  .producto {
-    width: 90%;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .producto:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .producto .botellas {
-    width: 100%;
-    height: 400px;
-  }
-  .producto .contenido {
-    padding: 15px;
-    text-align: center;
-  }
-  .producto .contenido {
-    line-height: 2;
-    color: #6a6a6a;
-  }
-  .producto .contenido h3 {
-    font-weight: 200;
-    margin-bottom: 15px;
-  }
-  .producto .contenido a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400ms ease;
-  }
-  .producto .contenido a:hover {
-    background: #2fb4cc;
-    color: #fff;
-  }
-  .producto .contenido .precio {
-    font-size: 25px;
-  }
-  /*Contacto*/
-  .mapa-tam {
-    width: 100%;
-    height: 450px;
-  }
-}
 /*Varietales*/
 /*Grid Area*/
 #f-varietal {
@@ -616,6 +242,7 @@ h2 {
   text-align: start;
 }
 
+/*CONTENEDOR NOSOTROS*/
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -624,6 +251,7 @@ h2 {
   row-gap: 20px;
 }
 
+/*CARD VARIETAL*/
 .card-img-top {
   width: 398px;
   height: 350px;
@@ -640,203 +268,8 @@ h2 {
   line-height: 25px;
 }
 
-@media screen and (max-width: 768px) {
-  .carrusel-doble {
-    display: flex;
-    flex-direction: column;
-  }
-  .carrusel-doble .carousel-inner {
-    width: 100%;
-    height: 300px;
-  }
-  h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-  }
-  h2 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  }
-  .promo {
-    display: flex;
-    flex-direction: column;
-  }
-  .promo-index {
-    width: 100%;
-    height: 300px;
-    padding: 15px;
-  }
-  .promo-index:hover {
-    box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
-    transform: translateY(-3%);
-  }
-  .footer {
-    width: 100%;
-    background-color: black;
-  }
-  .footer .grup-1 {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-  }
-  .footer .grup-1 .box figure {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer .grup-1 .box figure .img {
-    width: 170px;
-    height: 150px;
-  }
-  .footer .grup-1 .box .footer-text {
-    color: #fff;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    font-size: 25px;
-  }
-  .footer .grup-1 .box .texto {
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  .footer .grup-1 .red-social .fa {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 20px;
-    border-radius: 35px;
-    background-color: #6bdbe9;
-    margin-right: 25px;
-    text-align: center;
-    transition: all 300ms ease;
-  }
-  .footer .grup-1 .red-social .fa:hover {
-    color: rgba(233, 72, 185, 0.812);
-  }
-  .footer .grup-2 {
-    background-color: black;
-    padding: 5px 5px;
-    text-align: center;
-    color: #fff;
-  }
-  /*Nosotoros*/
-  .nosotros {
-    display: flex;
-    flex-direction: column;
-  }
-  .box-nosotros {
-    width: 90%;
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .box-nosotros:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .nosotros .box-nosotros {
-    background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
-    background-color: rgba(220, 233, 234, 0.627);
-    background-repeat: no-repeat;
-    background-position: 430px;
-    background-position-y: 160px;
-    background-size: 35%;
-  }
-  .box-nosotros .texto-nosotros {
-    width: 100%;
-    color: black;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    text-indent: 15px;
-    padding-top: 25px;
-  }
-  .box-gif {
-    width: 90%;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .box-gif:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .box-gif .gif {
-    width: 100%;
-    height: 350px;
-  }
-  /*Tienda*/
-  .varietales {
-    display: flex;
-    flex-direction: column;
-  }
-  .producto {
-    width: 90%;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .producto:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .producto .botellas {
-    width: 100%;
-    height: 400px;
-  }
-  .producto .contenido {
-    padding: 15px;
-    text-align: center;
-  }
-  .producto .contenido {
-    line-height: 2;
-    color: #6a6a6a;
-  }
-  .producto .contenido h3 {
-    font-weight: 200;
-    margin-bottom: 15px;
-  }
-  .producto .contenido a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400ms ease;
-  }
-  .producto .contenido a:hover {
-    background: #2fb4cc;
-    color: #fff;
-  }
-  .producto .contenido .precio {
-    font-size: 25px;
-  }
-  /*Contacto*/
-  .mapa-tam {
-    width: 100%;
-    height: 450px;
-  }
-}
 /*Contacto*/
+/*CONTENEDOR DEL FORMULARIO*/
 .form {
   width: 450px;
   margin: auto;
@@ -847,6 +280,7 @@ h2 {
   border-radius: 7px;
 }
 
+/*IMPUT , LABEL, TEXTAREA FORMULARIO*/
 .formulario-texto .form-imput {
   width: 100%;
   margin-bottom: 20px;
@@ -859,207 +293,12 @@ h2 {
   color: white;
 }
 
+/*MAPA*/
 .mapa-tam {
-  width: 1520px;
+  width: 100%;
   height: 450px;
 }
 
-@media screen and (max-width: 768px) {
-  .carrusel-doble {
-    display: flex;
-    flex-direction: column;
-  }
-  .carrusel-doble .carousel-inner {
-    width: 100%;
-    height: 300px;
-  }
-  h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-  }
-  h2 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  }
-  .promo {
-    display: flex;
-    flex-direction: column;
-  }
-  .promo-index {
-    width: 100%;
-    height: 300px;
-    padding: 15px;
-  }
-  .promo-index:hover {
-    box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
-    transform: translateY(-3%);
-  }
-  .footer {
-    width: 100%;
-    background-color: black;
-  }
-  .footer .grup-1 {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-  }
-  .footer .grup-1 .box figure {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer .grup-1 .box figure .img {
-    width: 170px;
-    height: 150px;
-  }
-  .footer .grup-1 .box .footer-text {
-    color: #fff;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    font-size: 25px;
-  }
-  .footer .grup-1 .box .texto {
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  .footer .grup-1 .red-social .fa {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 20px;
-    border-radius: 35px;
-    background-color: #6bdbe9;
-    margin-right: 25px;
-    text-align: center;
-    transition: all 300ms ease;
-  }
-  .footer .grup-1 .red-social .fa:hover {
-    color: rgba(233, 72, 185, 0.812);
-  }
-  .footer .grup-2 {
-    background-color: black;
-    padding: 5px 5px;
-    text-align: center;
-    color: #fff;
-  }
-  /*Nosotoros*/
-  .nosotros {
-    display: flex;
-    flex-direction: column;
-  }
-  .box-nosotros {
-    width: 90%;
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .box-nosotros:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .nosotros .box-nosotros {
-    background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
-    background-color: rgba(220, 233, 234, 0.627);
-    background-repeat: no-repeat;
-    background-position: 430px;
-    background-position-y: 160px;
-    background-size: 35%;
-  }
-  .box-nosotros .texto-nosotros {
-    width: 100%;
-    color: black;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    text-indent: 15px;
-    padding-top: 25px;
-  }
-  .box-gif {
-    width: 90%;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .box-gif:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .box-gif .gif {
-    width: 100%;
-    height: 350px;
-  }
-  /*Tienda*/
-  .varietales {
-    display: flex;
-    flex-direction: column;
-  }
-  .producto {
-    width: 90%;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .producto:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .producto .botellas {
-    width: 100%;
-    height: 400px;
-  }
-  .producto .contenido {
-    padding: 15px;
-    text-align: center;
-  }
-  .producto .contenido {
-    line-height: 2;
-    color: #6a6a6a;
-  }
-  .producto .contenido h3 {
-    font-weight: 200;
-    margin-bottom: 15px;
-  }
-  .producto .contenido a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400ms ease;
-  }
-  .producto .contenido a:hover {
-    background: #2fb4cc;
-    color: #fff;
-  }
-  .producto .contenido .precio {
-    font-size: 25px;
-  }
-  /*Contacto*/
-  .mapa-tam {
-    width: 100%;
-    height: 450px;
-  }
-}
 /*Tienda*/
 #f-tienda {
   text-align: center;
@@ -1070,6 +309,7 @@ h2 {
   display: flex;
 }
 
+/*SECCION PRODUCTOS*/
 .producto {
   width: 100%;
   margin: 20px;
@@ -1086,19 +326,22 @@ h2 {
   transform: translateY(-3%);
 }
 
+/*IMAGEN BOTELLA*/
 .producto .botellas {
   width: 100%;
   height: 400px;
 }
 
+/*CONTENIDO INFORMACION DE COMPRA*/
 .producto .contenido {
   padding: 15px;
   text-align: center;
+  background-color: rgb(160, 147, 147);
 }
 
 .producto .contenido {
   line-height: 2;
-  color: #6a6a6a;
+  color: white;
 }
 
 .producto .contenido h3 {
@@ -1106,6 +349,7 @@ h2 {
   margin-bottom: 15px;
 }
 
+/*BOTON DE COMPRA*/
 .producto .contenido a {
   text-decoration: none;
   display: inline-block;
@@ -1115,6 +359,7 @@ h2 {
   border: 1px solid #2fb4cc;
   border-radius: 4px;
   transition: all 400ms ease;
+  background-color: white;
 }
 
 .producto .contenido a:hover {
@@ -1128,40 +373,45 @@ h2 {
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
+  /*INDEX*/
+  /*CARRUSEL*/
   .carrusel-doble {
     display: flex;
     flex-direction: column;
   }
   .carrusel-doble .carousel-inner {
     width: 100%;
-    height: 300px;
+    height: 100%;
   }
   h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding-bottom: 25px;
     padding-top: 25px;
   }
   h2 {
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
     padding-bottom: 25px;
     padding-top: 25px;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
   }
+  /*PROMO*/
   .promo {
     display: flex;
     flex-direction: column;
   }
+  /*IMAGEN PROMO*/
   .promo-index {
     width: 100%;
-    height: 300px;
+    height: 100%;
     padding: 15px;
   }
   .promo-index:hover {
     box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
     transform: translateY(-3%);
   }
+  /*FOOTER*/
   .footer {
     width: 100%;
     background-color: black;
@@ -1171,6 +421,7 @@ h2 {
     flex-direction: column;
     padding: 30px;
   }
+  /*FIGURA FOOTER*/
   .footer .grup-1 .box figure {
     width: 70%;
     height: 100%;
@@ -1182,6 +433,7 @@ h2 {
     width: 170px;
     height: 150px;
   }
+  /*TEXTO FOOTER*/
   .footer .grup-1 .box .footer-text {
     color: #fff;
     margin-top: 30px;
@@ -1192,6 +444,7 @@ h2 {
     color: #fff;
     margin-bottom: 10px;
   }
+  /*RED SOCIAL FOOTER*/
   .footer .grup-1 .red-social .fa {
     display: inline-block;
     text-decoration: none;
@@ -1220,6 +473,7 @@ h2 {
     display: flex;
     flex-direction: column;
   }
+  /*BOX NOSOTROS*/
   .box-nosotros {
     width: 90%;
     border-radius: 6px;
@@ -1232,6 +486,7 @@ h2 {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
   }
+  /*FONDO NOSOTROS*/
   .nosotros .box-nosotros {
     background-image: url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png);
     background-color: rgba(220, 233, 234, 0.627);
@@ -1240,6 +495,7 @@ h2 {
     background-position-y: 160px;
     background-size: 35%;
   }
+  /*TEXTO BOX*/
   .box-nosotros .texto-nosotros {
     width: 100%;
     color: black;
@@ -1249,6 +505,7 @@ h2 {
     text-indent: 15px;
     padding-top: 25px;
   }
+  /*GIF BOX*/
   .box-gif {
     width: 90%;
     border-radius: 6px;
@@ -1264,15 +521,39 @@ h2 {
   }
   .box-gif .gif {
     width: 100%;
+    height: 100%;
+  }
+  /*Varietal*/
+  .seccion-varietales {
+    text-align: start;
+  }
+  .flex-container {
+    display: flex;
+    width: 100%;
+  }
+  /*CARD VARIETAL*/
+  .card-img-top {
+    width: 100%;
     height: 350px;
+  }
+  .card-body {
+    background-color: black;
+  }
+  .card-body .card-text {
+    color: azure;
+    font-size: 18px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 25px;
   }
   /*Tienda*/
   .varietales {
     display: flex;
     flex-direction: column;
   }
+  /*SECCION PRODUCTO*/
   .producto {
     width: 90%;
+    height: 50%;
     border-radius: 6px;
     overflow: hidden;
     background: #fff;
@@ -1284,31 +565,37 @@ h2 {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
   }
+  /*IMAGEN BOTELLA*/
   .producto .botellas {
     width: 100%;
-    height: 400px;
+    height: 60%;
   }
+  /*CONTENIDO INFORMACION DE COMPRA*/
   .producto .contenido {
     padding: 15px;
     text-align: center;
+    background-color: rgb(160, 147, 147);
   }
   .producto .contenido {
     line-height: 2;
-    color: #6a6a6a;
+    color: white;
   }
   .producto .contenido h3 {
     font-weight: 200;
     margin-bottom: 15px;
+    font-size: 28px;
   }
+  /*BOTON DE COMPRA*/
   .producto .contenido a {
     text-decoration: none;
     display: inline-block;
     padding: 10px;
     margin-top: 10px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
+    color: black;
+    border: 2px solid #2fb4cc;
     border-radius: 4px;
     transition: all 400ms ease;
+    background-color: white;
   }
   .producto .contenido a:hover {
     background: #2fb4cc;
@@ -1318,6 +605,34 @@ h2 {
     font-size: 25px;
   }
   /*Contacto*/
+  /*CONTENEDOR DEL FORMULARIO*/
+  .form {
+    width: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+  }
+  /*IMPUT , LABEL, TEXTAREA FORMULARIO*/
+  .formulario-texto .form-imput {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    color: black;
+    font-size: 18px;
+    background-color: #ebd6d6;
+  }
+  .formulario-texto .form-label {
+    color: white;
+  }
+  .formulario-texto .texta {
+    width: 100%;
+    /*MAPA*/
+  }
   .mapa-tam {
     width: 100%;
     height: 450px;

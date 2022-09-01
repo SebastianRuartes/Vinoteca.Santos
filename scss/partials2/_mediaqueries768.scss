@@ -1,11 +1,14 @@
-
+@import "../variables";
+@import "../mixin";
 @media screen and(max-width: 768px){
+    /*INDEX*/
+    /*CARRUSEL*/
     .carrusel-doble {
         display: flex;
         flex-direction: column;
             .carousel-inner {
                 width: 100%;
-                height: 300px;
+                height: 100%;
           }
       }
       h1{
@@ -15,36 +18,36 @@
         padding-top: 25px;
       }
       h2{
-        color: $color-titulos;
+        color: $color-subtitulos;
         text-align: center;
         padding-bottom: 25px;
         padding-top: 25px;
         background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
       }
-      
+    /*PROMO*/
     .promo{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
       }
-    
+    /*IMAGEN PROMO*/
       .promo-index{
         width: 100%;
-        height: 300px;
+        height: 100%;
         padding: 15px;
         &:hover{
           box-shadow: 5px 5px 40px rgba(61, 192, 224, 0.4);
           transform:translateY(-3%);
         }
       }
+      /*FOOTER*/
       .footer{
         width: 100%;
         background-color: black;
       }
     .footer .grup-1{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         padding: 30px;
       }
+      /*FIGURA FOOTER*/
       .footer .grup-1 .box figure{
         width: 70%;
         height: 100%;
@@ -56,6 +59,7 @@
         width: 170px;
         height: 150px;
       }
+      /*TEXTO FOOTER*/
       .footer .grup-1 .box .footer-text{
         color: $footer-color;
         margin-top: 30px;
@@ -66,6 +70,7 @@
         color: $footer-color;
         margin-bottom: 10px;
       }
+      /*RED SOCIAL FOOTER*/
       .footer .grup-1 .red-social .fa{
         display: inline-block;
         text-decoration: none;
@@ -92,9 +97,9 @@
       }
     /*Nosotoros*/
     .nosotros{
-        display: flex;
-        flex-direction: column;
+      @include flex-column;
     }
+    /*BOX NOSOTROS*/
     .box-nosotros{
         width: 90%;
         border-radius: 6px;
@@ -107,7 +112,7 @@
             transform:translateY(-3%);
             }
     }
-    
+    /*FONDO NOSOTROS*/
     .nosotros .box-nosotros{
         background-image:url(https://images.vexels.com/media/users/3/157119/isolated/preview/71ff9ef8ad9d83e538eb5a78b2708659-icono-plano-de-botellas-de-vino.png) ;
         background-color:rgba(220, 233, 234, 0.627);
@@ -116,6 +121,7 @@
         background-position-y: 160px;
         background-size: 35%;
     }
+    /*TEXTO BOX*/
     .box-nosotros .texto-nosotros{
         width: 100%;
         color: black;
@@ -125,6 +131,7 @@
         text-indent: 15px;
         padding-top: 25px;
     }
+    /*GIF BOX*/
     .box-gif{
         width: 90%;
         border-radius: 6px;
@@ -140,15 +147,42 @@
     }
     .box-gif .gif{
         width: 100%;
-        height: 350px;
+        height: 100%;
     }
+    /*Varietal*/
+    .seccion-varietales{
+      text-align: start;
+  }
+  
+  .flex-container{
+      display: flex;
+      width: 100%;
+  
+  }
+  /*CARD VARIETAL*/
+  .card-img-top{
+      width: 100%;
+      height: 350px;
+      
+  }
+  .card-body{
+      background-color: black;
+  }
+  .card-body .card-text{
+      color: azure;
+      font-size: 18px;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      line-height: 25px;
+  }
+  
     /*Tienda*/
     .varietales{
-        display: flex;
-        flex-direction: column;
+      @include flex-column;
       }
+      /*SECCION PRODUCTO*/
       .producto{
-        width: 90%;
+        width: $ancho-imagen;
+        height: 50%;
         border-radius: 6px;
         overflow: hidden;
         background: #fff;
@@ -160,41 +194,81 @@
         box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
         transform:translateY(-3%);
       }
+      /*IMAGEN BOTELLA*/
       .producto .botellas{
         width: 100%;
-        height: 400px;
+        height: 60%;
       }
+      /*CONTENIDO INFORMACION DE COMPRA*/
       .producto .contenido{
         padding: 15px;
         text-align: center;
+        background-color: rgb(160, 147, 147);
       }
       .producto .contenido{
         line-height: 2;
-        color:#6a6a6a;
+        color:white;
       }
       .producto .contenido h3{
         font-weight: 200;
         margin-bottom: 15px;
+        font-size: 28px;
         
       }
+      /*BOTON DE COMPRA*/
       .producto .contenido a{
         text-decoration: none;
         display: inline-block;
         padding:10px;
         margin-top: 10px;
-        color: #2fb4cc;
-        border: 1px solid #2fb4cc;
+        color:black;
+        border: 2px solid #2fb4cc;
         border-radius: 4px;
         transition: all 400ms ease;
+        background-color: white;
+        
       }
       .producto .contenido a:hover{
-        background:#2fb4cc ;
+        background: $fondo-a ;
         color: #fff;
       }
       .producto .contenido .precio{
         font-size: 25px;
       }
     /*Contacto*/
+    /*CONTENEDOR DEL FORMULARIO*/
+    .form{
+      width: 100%;
+      margin: auto;
+      background:$formulario-fondo;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      margin-top:20px;
+      border-radius: 7px;
+    }
+    /*IMPUT , LABEL, TEXTAREA FORMULARIO*/
+    .formulario-texto .form-imput{
+      width: $boton - 5%;
+      margin-bottom: 20px;
+      padding: 15px;
+      box-sizing: border-box;
+      margin-left: 10px;
+      color:black;
+      font-size: 18px;
+      @if ($boton - 5%) < 95% {
+        background-color: #6bdbe9;
+      }
+      @else {
+        background-color: #ebd6d6;
+      }
+    }
+    .formulario-texto .form-label{
+      color: white;
+    }
+    .formulario-texto .texta{
+      width: $boton;
+      /*MAPA*/
+    }
     .mapa-tam{
         width: 100%;
         height: 450px;

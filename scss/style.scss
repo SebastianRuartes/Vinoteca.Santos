@@ -1,5 +1,8 @@
 /*VARIABLES*/
 @import "../scss/variables";
+/*MIXIN*/
+@import"../scss/mixin";
+
 /*PAGINAS*/
 @import "../scss/partials/index";
 @import "../scss/partials/nosotros";
@@ -7,5 +10,5 @@
 @import "../scss/partials/contacto";
 @import "../scss/partials/tienda";
 /*MEDIA QUERIES*/
-@import "../scss/partials2/mediaqueries375";
+@import "../scss/partials2/mediaqueries768";
 
